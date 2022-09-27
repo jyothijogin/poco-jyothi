@@ -1,0 +1,50 @@
+ body {
+     background-color: #333;
+     color: whitesmoke;
+     font-family: Arial, Helvetica, sans-serif;
+
+ }
+
+ .intro_image {
+     margin: 4cm;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ #butt_id {
+     background-color: aqua;
+     padding: 10px;
+     border-radius: 10px;
+     font-weight: bold;
+ }
+
+ #img_id {
+     width: 350px;
+     height: 280px;
+     border-radius: 50%;
+ }
+
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+ }
+
+ li {
+     float: right;
+ }
+
+ li a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+ }
+
+ li a:hover {
+     background-color: #111;
+ }
