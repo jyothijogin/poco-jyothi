@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!--
+    What I would change and why - 
+    I would like to add section header footer in a more efficient way. 
+    I would like to check if phone numbers and email adresses are entered correct in the form.
+
+-->
+
+<body>
+    <main>
+
+        <h1>Profil</h1>
+        <form action="#" method="get" autocomplete="on">
+            <section>
+
+                <h3>Hier können Sie Ihre Address-Angaben einsehen und anpassen</h3>
+                <fieldset>
+                    <legend></legend>
+
+                    <h3>Persönliche Daten</h3>
+
+                    <label for="titel">Titel</label>
+                    <input type="text" id="titel" name="titel" placeholder="Dr.hc" autofocus required><br><br>
+
+                    <label for="vorname">Vorname</label>
+                    <input type="text" id="vorname" name="vorname" placeholder="Peter" required><br><br>
+
+                    <label for="nachname">Nachname</label>
+                    <input type="text" id="nachname" name="nachname" placeholder="Muster" required><br><br>
+
+                    <label for="geschlecht">Geschlecht</label>
+                    <input type="radio" id="weiblich" name="geschlecht" value="W">
+                    <label for="weiblich">W</label>
+                    <input type="radio" id="männlich" name="geschlecht" value="M">
+                    <label for="männlich">M</label><br><br>
+
+                    <label for="sprache">Sprache</label>
+                    <input type="radio" id="deutsch" name="sprache" value="DE">
+                    <label for="deutsch">DE</label>
+                    <input type="radio" id="french" name="sprache" value="FR">
+                    <label for="french">FR</label>
+                    <input type="radio" id="italian" name="sprache" value="IT">
+                    <label for="italian">IT</label><br><br>
+
+                </fieldset>
+            </section>
+
+            <section>
+                <h3 class="hidden">KontaktDaten</h3>
+                <fieldset>
+                    <legend></legend>
+
+                    <h3>KontaktDaten</h3>
+                    <label for="tel">Telefon</label>
+                    <input type="tel" id="tel" name="tel" required><br><br>
+
+                    <label for="mobile">Mobile</label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="optional"><br><br>
+
+                    <label for="hauptnummer">Hauptnummer</label>
+                    <input type="tel" id="hauptnummer" name="hauptnummer" placeholder="optional"><br><br>
+
+                    <label for="fax">Fax</label>
+                    <input type="tel" id="fax" name="fax" placeholder="optional"><br><br>
+
+                    <label for="mail1">Mail1</label>&nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="email" id="mail1" name="mail1" required><br><br>
+
+                    <label for="mail2">Mail2</label>&nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="email" id="mail2" name="mail2" placeholder="optional"><br><br>
+
+                </fieldset>
+            </section>
+
+            <section>
+                <h3 class="hidden">AdressDaten</h3>
+                <fieldset>
+                    <legend></legend>
+
+                    <h3>Addressdaten</h3>
+                    <label for="firma">Firma</label>
+                    <input type="text" id="firma" name="firma" required><br><br>
+
+                    <label for="zusatzfirma">Zusatz Firma</label>
+                    <input type="text" id="zusatzfirma" name="zusatzfirma" placeholder="optional"><br><br>
+
+                    <label for="homepage">Homepage</label>
+                    <input type="url" id="homepage" name="homepage" required><br><br>
+
+                    <label for="adresse">Adresse/ Haus Nr.</label>
+                    <input type="text" id="adresse" name="adresse" placeholder="Musterstrasse">
+                    <input type="number" id="adresse" name="adresse" placeholder="33"><br><br>
+
+                    <label for="zusatzadresse">Zusatz Adresse</label>
+                    <input type="text" id="zusatzadresse" name="zusatzadresse" placeholder="optional"><br><br>
+
+                    <label for="postfach">Postfach</label>
+                    <input type="number" id="postfach" name="postfach" placeholder="optional"><br><br>
+
+                    <label for="plzort">PLZ/ Ort</label>
+                    <input type="number" id="plzort" name="plzort" placeholder="8800">
+                    <input type="text" id="plzort" name="plzort" placeholder="Musterstadt"><br><br>
+
+                    <label for="kantonland">Kanton/ Land</label>
+                    <input type="text" id="kantonland" name="kantonland" placeholder="ZH">
+                    <input type="text" id="kantonland" name="kantonland" placeholder="Schweiz"><br><br>
+
+                </fieldset>
+            </section>
+
+            <input type="submit" value="Speichern">
+
+        </form>
+        </section>
+    </main>
+</body>
+
+</html>
