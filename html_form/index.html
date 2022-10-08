@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -19,106 +20,164 @@
 <body>
     <main>
 
-        <h1>Profil</h1>
-        <form action="#" method="get" autocomplete="on">
-            <section>
 
+        <section>
+            <h1>Profil</h1>
+            <form action="#" method="get" autocomplete="on">
                 <h3>Hier können Sie Ihre Address-Angaben einsehen und anpassen</h3>
                 <fieldset>
                     <legend></legend>
+                    <article class="subheader">
+                        <h3>Persönliche Daten</h3>
+                    </article>
+                    <section class="inputdata">
+                        <article class="label-input">
+                            <label class="labels" for="titel">Titel</label>
+                            <input type="text" class="input" id="titel" name="titel" placeholder="optional" autofocus
+                                required>
+                        </article>
 
-                    <h3>Persönliche Daten</h3>
+                        <article class="label-input">
+                            <label class="labels" for="vorname">Vorname</label>
 
-                    <label for="titel">Titel</label>
-                    <input type="text" id="titel" name="titel" placeholder="Dr.hc" autofocus required><br><br>
+                            <input type="text" class="input inputwithicon" id="vorname" name="vorname" required>
 
-                    <label for="vorname">Vorname</label>
-                    <input type="text" id="vorname" name="vorname" placeholder="Peter" required><br><br>
+                        </article>
 
-                    <label for="nachname">Nachname</label>
-                    <input type="text" id="nachname" name="nachname" placeholder="Muster" required><br><br>
+                        <article class="label-input">
+                            <label class="labels" for="nachname">Nachname</label>
+                            <input type="text" class="input" id="nachname" name="nachname" placeholder="Muster"
+                                required>
+                        </article>
 
-                    <label for="geschlecht">Geschlecht</label>
-                    <input type="radio" id="weiblich" name="geschlecht" value="W">
-                    <label for="weiblich">W</label>
-                    <input type="radio" id="männlich" name="geschlecht" value="M">
-                    <label for="männlich">M</label><br><br>
+                        <article class="label-input">
+                            <label class="labels" for="geschlecht">Geschlecht</label>
 
-                    <label for="sprache">Sprache</label>
-                    <input type="radio" id="deutsch" name="sprache" value="DE">
-                    <label for="deutsch">DE</label>
-                    <input type="radio" id="french" name="sprache" value="FR">
-                    <label for="french">FR</label>
-                    <input type="radio" id="italian" name="sprache" value="IT">
-                    <label for="italian">IT</label><br><br>
+                            <input type="radio" class="radio1" id="weiblich" name="geschlecht" value="W">
+                            <label class="radio1 radio2" for="weiblich">W</label>
+
+                            <input type="radio" class="radio1" id="männlich" name="geschlecht" value="M">
+                            <label class="radio1 radio2" for="männlich">M</label>
+                        </article>
+
+                        <article class="label-input">
+                            <label class="labels" for="sprache">Sprache</label>
+
+                            <input type="radio" class="radio radio4" id="deutsch" name="sprache" value="DE">
+                            <label class="radio3" for="deutsch">DE</label>
+
+                            <input type="radio" class="radio radio4" id="french" name="sprache" value="FR">
+                            <label class="radio3" for="french">FR</label>
+
+                            <input type="radio" class="radio radio4" id="italian" name="sprache" value="IT">
+                            <label class="radio3" for="italian">IT</label>
+                        </article>
+                    </section>
 
                 </fieldset>
-            </section>
+        </section>
 
-            <section>
-                <h3 class="hidden">KontaktDaten</h3>
-                <fieldset>
-                    <legend></legend>
-
+        <section>
+            <h3 class="hidden">KontaktDaten</h3>
+            <fieldset>
+                <legend></legend>
+                <article class="subheader">
                     <h3>KontaktDaten</h3>
-                    <label for="tel">Telefon</label>
-                    <input type="tel" id="tel" name="tel" required><br><br>
+                </article>
 
-                    <label for="mobile">Mobile</label>
-                    <input type="tel" id="mobile" name="mobile" placeholder="optional"><br><br>
+                <article class="label-input">
+                    <label class="labels" for="tel">Telefon</label>
+                    <input type="tel" class="input inputwithicon" id="tel" name="tel" required>
+                </article>
 
-                    <label for="hauptnummer">Hauptnummer</label>
-                    <input type="tel" id="hauptnummer" name="hauptnummer" placeholder="optional"><br><br>
+                <article class="label-input">
+                    <label class="labels" for="mobile">Mobile</label>
+                    <input type="tel" class="input" id="mobile" name="mobile" placeholder="optional">
+                </article>
 
-                    <label for="fax">Fax</label>
-                    <input type="tel" id="fax" name="fax" placeholder="optional"><br><br>
+                <article class="label-input">
+                    <label class="labels" for="hauptnummer">Hauptnummer</label>
+                    <input type="tel" class="input" id="hauptnummer" name="hauptnummer" placeholder="optional">
+                </article>
 
-                    <label for="mail1">Mail1</label>&nbsp; &nbsp; &nbsp; &nbsp;
-                    <input type="email" id="mail1" name="mail1" required><br><br>
+                <article class="label-input">
+                    <label class="labels" for="fax">Fax</label>
+                    <input type="tel" class="input" id="fax" name="fax" placeholder="optional">
+                </article>
 
-                    <label for="mail2">Mail2</label>&nbsp; &nbsp; &nbsp; &nbsp;
-                    <input type="email" id="mail2" name="mail2" placeholder="optional"><br><br>
+                <article class="label-input">
+                    <label class="labels" for="mail1">Mail1</label>
+                    <input type="email" class="input inputwithicon" id="mail1" name="mail1" required>
+                </article>
 
-                </fieldset>
-            </section>
+                <article class="label-input">
+                    <label class="labels" for="mail2">Mail2</label>
+                    <input type="email" class="input" id="mail2" name="mail2" placeholder="optional">
+                </article>
 
-            <section>
-                <h3 class="hidden">AdressDaten</h3>
-                <fieldset>
-                    <legend></legend>
+            </fieldset>
+        </section>
 
+        <section>
+            <h3 class="hidden">AdressDaten</h3>
+            <fieldset>
+                <legend></legend>
+                <article class="subheader">
                     <h3>Addressdaten</h3>
-                    <label for="firma">Firma</label>
-                    <input type="text" id="firma" name="firma" required><br><br>
+                </article>
 
-                    <label for="zusatzfirma">Zusatz Firma</label>
-                    <input type="text" id="zusatzfirma" name="zusatzfirma" placeholder="optional"><br><br>
+                <article class="label-input">
+                    <label class="labels" for="firma">Firma</label>
+                    <input type="text" class="input inputwithicon" id="firma" name="firma" required>
+                </article>
 
-                    <label for="homepage">Homepage</label>
-                    <input type="url" id="homepage" name="homepage" required><br><br>
+                <article class="label-input">
+                    <label class="labels" for="zusatzfirma">Zusatz Firma</label>
+                    <input type="text" class="input" id="zusatzfirma" name="zusatzfirma" placeholder="optional">
+                </article>
 
-                    <label for="adresse">Adresse/ Haus Nr.</label>
-                    <input type="text" id="adresse" name="adresse" placeholder="Musterstrasse">
-                    <input type="number" id="adresse" name="adresse" placeholder="33"><br><br>
+                <article class="label-input">
+                    <label class="labels" for="homepage">Homepage</label>
+                    <input type="url" class="input" id="homepage" name="homepage" placeholder="optional">
+                </article>
 
-                    <label for="zusatzadresse">Zusatz Adresse</label>
-                    <input type="text" id="zusatzadresse" name="zusatzadresse" placeholder="optional"><br><br>
+                <article class="label-input">
+                    <label class="labels" for="adresse">Adresse/ Haus Nr.</label>
+                    <input type="text" class="inputwithicon multi-line2" id="adresse" name="adresse">
+                    <input type="text" class="inputwithicon multi-line1" id="adresse" name="adresse">
+                </article>
 
-                    <label for="postfach">Postfach</label>
-                    <input type="number" id="postfach" name="postfach" placeholder="optional"><br><br>
+                <article class="label-input">
+                    <label class="labels" for="zusatzadresse">Zusatz Adresse</label>
+                    <input type="text" class="input" id="zusatzadresse" name="zusatzadresse" placeholder="optional">
+                </article>
 
-                    <label for="plzort">PLZ/ Ort</label>
-                    <input type="number" id="plzort" name="plzort" placeholder="8800">
-                    <input type="text" id="plzort" name="plzort" placeholder="Musterstadt"><br><br>
+                <article class="label-input">
+                    <label class="labels" for="postfach">Postfach</label>
+                    <input type="number" class="input" id="postfach" name="postfach" placeholder="optional">
+                </article>
 
-                    <label for="kantonland">Kanton/ Land</label>
-                    <input type="text" id="kantonland" name="kantonland" placeholder="ZH">
-                    <input type="text" id="kantonland" name="kantonland" placeholder="Schweiz"><br><br>
+                <article class="label-input">
+                    <label class="labels" for="plzort">PLZ/ Ort</label>
 
-                </fieldset>
-            </section>
+                    <input type="text" class="inputwithicon multi-line1" id="plzort" name="plzort">
+                    <input type="text" class="inputwithicon multi-line2" id="plzort" name="plzort">
 
-            <input type="submit" value="Speichern">
+                </article>
+
+                <article class="label-input">
+                    <label class="labels" for="kantonland">Kanton/ Land</label>
+                    <input type="text" class="multi-line1" id="kantonland" name="kantonland">
+                    <input type="text" class="multi-line2" id="kantonland" name="kantonland">
+
+                </article>
+                <article>
+                    <input type="submit" class="button1" value="Speichern">
+                </article>
+
+            </fieldset>
+        </section>
+
 
         </form>
         </section>
