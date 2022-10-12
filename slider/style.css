@@ -1,0 +1,55 @@
+ 
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+}
+
+ul li {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    font-size: 4em;
+    
+} 
+
+.navigation {
+    text-align: center;
+    position: fixed;
+    left: 50vw;
+}
+
+#slide1 {
+    background-color: aquamarine;
+}
+
+#slide2 {
+    background-color: rebeccapurple;
+}
+
+#slide3 {
+    background-color: yellow;
+}
+
+#slide4 {
+    background-color: green;
+}
+
+#slide5 {
+    background-color: red;
+}
+
+   
