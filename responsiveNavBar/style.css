@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100%;
+}
+
+.header {
+    background-color: #a2d2ff;
+}
+
+.main {
+    margin: 1rem;
+    height: 100vh;
+}
+
+.footer {
+    background-color: #a2d2ff;
+    height: 25px;
+    padding: 5px 5px;
+}
+
+.nav {
+    border-bottom: 1px solid white;
+    
+}
+
+.nav__toggle {
+    position: absolute;
+    cursor: pointer;
+    margin: 1rem;
+    right: 0;
+}
+
+.nav__toggle i {
+    width: 1.5rem;
+}
+
+#close {
+    display: none;
+    font-size: 1.5rem;
+}
+
+#bars {
+    font-size: 1.5rem;
+    margin-top: 0.2rem;
+}
+
+#logo {
+    font-size: 1.5rem;
+}
+
+.nav__checkbox {
+    display: none;
+}
+
+.nav__menu {
+    align-items: center;
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.nav__menu a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+}
+
+.nav__menu a:hover {
+    color: antiquewhite
+}
+
+.nav__menu li {
+    list-style: none;
+    display: none;
+}
+
+ .nav__menu li:first-child {
+    margin-right: auto;
+    display: block;
+}   
+
+#nav__checkbox:checked ~ ul.nav__menu li {
+    display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle #close {
+    display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle #bars {
+    display: none;
+}
+
+/* Desktop View */
+@media only screen and (min-width: 1000px) {
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav__menu {
+        flex-direction: row;
+    }
+
+    .nav__menu li {
+        display: block;
+    }
+}
