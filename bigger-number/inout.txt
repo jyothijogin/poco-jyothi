@@ -1,0 +1,11 @@
+Inputs :
+1. First number - num1
+2. Second number - num2
+
+Outputs :
+1. The greater number amongst the two numbers.
+or
+2. The smaller number amongst the two numbers.
+
+Processes :
+1. We compare the two numbers using < and > symbols

@@ -1,0 +1,4 @@
+1. start
+2. if num1 > num2 then print "The greater number of num1 and num2 is num1" and go to 4
+3. If num1 < num2 then print "The smaller number of num1 and num2 is num1" and go to 4
+4. Stop
