@@ -1,0 +1,12 @@
+Inputs : 
+1. Your age
+2. At what age would you like to retire
+
+Outputs :
+1. Number of years left to retire.
+2. At what year You would retire.
+
+Processes :
+1. Calculate number of years left to retire.
+2. Find current year.
+3. Find the retirement year.

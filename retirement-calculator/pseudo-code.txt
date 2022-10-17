@@ -1,0 +1,10 @@
+1. Start
+1. Calculate number of years left to retire by substracting our 2 inputs.
+    yearLeft = age2 - age1
+2. Find current year using in-built function and store it in currentYear.
+    currentYear = new Date().getFullYear()
+3. Find the retirement year by adding current year and result of step 1 in processes.
+    retirementYear = currentYear + yearsLeft
+4. Display the result as follows:
+    "You have 'yearsLeft' years left until you can retire. Its 2022, so you can retire in retirementYear."
+5. Stop
