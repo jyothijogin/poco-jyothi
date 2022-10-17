@@ -1,0 +1,16 @@
+Inputs :
+Radio button choices -
+1. German language
+2. Italian
+3. French
+4. Default
+
+Outputs :
+1. If we select option 1 - then print hello world in German language.
+2. If we select option 2 - then print hello world in Italian language.
+3. If we select option 3 - then print hello world in French language.
+4. If we select option 4 - then print hello world in English language.
+
+Processes :
+1. When we select each options, we call a helloworld function and pass the language code as arguement.
+2. Display hello world in that particular language
