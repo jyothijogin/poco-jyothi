@@ -109,7 +109,7 @@
 
         //
         // TODO: Task 1 - add some bombs at fixed positions.
-        cells[0][5].isBomb = true;
+        /* cells[0][5].isBomb = true;
         cells[1][8].isBomb = true;
         cells[2][3].isBomb = true;
         cells[3][4].isBomb = true;
@@ -118,7 +118,7 @@
         cells[6][9].isBomb = true;
         cells[7][0].isBomb = true;
         cells[8][5].isBomb = true;
-        cells[9][2].isBomb = true;
+        cells[9][2].isBomb = true; */
         
 
 
@@ -127,6 +127,17 @@
         //                Add a BOMBS_COUNT constant so that you can easily change the amount of bombs placed. Put it next to the
         //                other constants.
         //
+        for(i=0; i<10; i++) {
+            var row = getRandomNum();
+            var col = getRandomNum();
+            cells[row][col].isBomb = true;
+        }
+
+        //function to return a random number for rows and columns
+        function getRandomNum() {
+            return Math.floor(Math.random() * (9 - 0 + 1) + 0);
+        }
+       
         
 
 
