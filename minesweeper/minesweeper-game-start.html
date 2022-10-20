@@ -85,7 +85,7 @@
 
         const ROWS_COUNT = 10;
         const COLS_COUNT = 10;
-        const BOMBS_COUNT = 0;
+        const BOMBS_COUNT = 12;
 
         var defeat = false;
         var victory = false;
@@ -127,16 +127,17 @@
         //                Add a BOMBS_COUNT constant so that you can easily change the amount of bombs placed. Put it next to the
         //                other constants.
         //
-        for(i=0; i<10; i++) {
+         for(i = 0; i<BOMBS_COUNT; i++) {
             var row = getRandomNum();
             var col = getRandomNum();
             cells[row][col].isBomb = true;
+            
         }
 
         //function to return a random number for rows and columns
         function getRandomNum() {
             return Math.floor(Math.random() * (9 - 0 + 1) + 0);
-        }
+        } 
        
         
 
@@ -177,7 +178,23 @@
             // TODO: Task 4 - Adjacent bombs are bombs in cells touching our cell (also diagonally). Implement this function
             //                so that it returns the count of adjacent cells with bombs in them. 
             //
-            return 1;
+            var countOfBombs = 0;
+            for(var i=row-1; i<=row+1; i++) {
+                for(var j=col-1; j<=col+1;j++) {
+                    if(i< 0 || i> ROWS_COUNT-1 || j<0 || j> COLS_COUNT-1) {
+                        continue;
+                    }
+                     
+                     if((cells[i][j].isBomb) === true) {
+                        
+                        countOfBombs++;
+                     }
+                    
+                }
+              
+            }
+            console.log(countOfBombs);
+            return countOfBombs;
         }
 
         function getBombsCount() {
@@ -237,6 +254,7 @@
                         if (cell.isBomb) {
                             cellText = "💣";
                         } else {
+                            
                             var adjBombs = countAdjacentBombs(row, col);
                             if (adjBombs > 0) { 
                                 cellText = adjBombs.toString();
@@ -249,7 +267,7 @@
                                 } else if (adjBombs == 4) {
                                     textColor = "black";
                                 }
-                            }
+                            } 
                         }
                     } else {
                         if (cell.hasBeenFlagged) {
