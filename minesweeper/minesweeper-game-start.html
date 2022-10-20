@@ -160,15 +160,17 @@
         //
 
         function discoverCell(row, col) {
-            //
-            // TODO: Task 5 - Reveal cells when clicked.
-            //
+            //If we click already flagged cell then remove the flag and return
             if(cells[row][col].hasBeenFlagged === true) {
                 cells[row][col].hasBeenFlagged =false;
                 return;
             }
+            //
+            // TODO: Task 5 - Reveal cells when clicked.
+            //
+            
             var adjBombs = countAdjacentBombs(row, col);
-            console.log(adjBombs);
+          //  console.log(adjBombs);
             
             // TODO: Task 6 - Discover neighbor cells recursively, as long as there are no adjacent bombs to the current cell.
             if (adjBombs === 0) {
@@ -205,7 +207,7 @@
             //                When clicking a cell and holding shift, function flagCell() will be called for you.
             //
             cells[row][col].hasBeenFlagged = true;
-            // cells[row][col].hasBeenFlagged = cells[row][col].hasBeenFlagged ? false : true ;
+            
            
         }
 
@@ -238,7 +240,11 @@
             //
             // TODO: Task 9 - Implement stats: the counters currently always display 0, calculate and return the relevant values.
             //
-            return 0;
+            if(defeat === true) {
+                return BOMBS_COUNT;
+            }           
+            else
+             return 0;
         }
 
         function getClearedCells() {
@@ -259,8 +265,16 @@
             //
             // TODO: Task 10 - Implement victory. If the player has revealed as many cells as they must (every cell that isn't a
             //                 bomb), set variable victory to true.
-            //
-            return 0;
+            for(i =0; i< ROWS_COUNT;i++) {
+                for (j=0; j< COLS_COUNT; j++) {
+                    if(cells[i][j].discovered === false && cells[i][j].isBomb === false) {
+                     victory=false;
+                        return 0;
+                    }
+                }
+            }
+            victory=true;
+            
         }
 
         //
