@@ -44,3 +44,22 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+//script to send the contact form details to google sheets
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxOe-cZB_2eatThGOjdvw4CarJ7MR5pliucCCG_SIT6iva9qlIyhnX5R2bR7cZlMRylig/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg=document.getElementById("successMsg");
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML ="Message sent successfully";
+        setTimeout(function() {
+          msg.innerHTML = "";
+        },4000)
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+
+  

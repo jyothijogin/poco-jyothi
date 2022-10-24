@@ -21,7 +21,7 @@
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="https://github.com/jyothijogin?tab=repositories" target="_blank">Projects</a></li>
                     <li><a href="#">Hobbies</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closeMenu()"></i>
@@ -105,22 +105,24 @@
                 <p><i class="fas fa-paper-plane"></i> jyothi.jogin@powercoders-org</p>
                 <p><i class="fas fa-phone-square-alt"></i>+41 764558587</p>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/jyothi.jogin"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/jyothi.jogin" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/jyothi-jogin-9211861a8/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/jyothijogin"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jyothi-jogin-9211861a8/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/jyothijogin" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
                 <a href="./cv/CV_JyothiJogin.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" id="email" name="email" placeholder="Your Email" required>
                     <textarea name="message" id="msg" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                    <button type="submit" id="submit" class="btn btn2">Submit</button>
+                    <span id="successMsg"></span>
                 </form>
-
+                
             </div>
+            
         </div>
     </div>
    
