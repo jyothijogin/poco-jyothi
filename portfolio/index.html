@@ -1,35 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Jyothi Jogin</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/d8a83adc6e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release-pro/v4.0.0/css/line.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <nav class="nav_bar">
-      <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="intro_image">
-      <article>
-        <h1>Hey, It's Jyothi</h1>
-        <p>A Bachelor in Computer Science & Engineering.</p>
-        <p>Looking for more opportunities.</p>
-        <button id="butt_id">My Projects</button>
-      </article>
-      <article class="image">
-        <img id="img_id" src="jo.jpg" alt="Portfolio picture of Jyothi, smiling at the camera">
-      </article>
-    </section>
-  </main>
+    <header id="header">
+        <section class="container">
+ <!-----------------------------------NavBar------------------------------------>
+             <nav class="nav">
+                <img class="logo" src="./images/logo.png" alt="logo image of jyothi">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Hobbies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Jyothi</span><br> Jogin from India</h1>
+            </div>
+        </section>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-circle-up"></i></button>
+    </header>
+    
+ <!-----------------------------------About------------------------------------>
+ <main>
+ <div id="about">
+            <div class="container">
+                <div class="row">
+
+                    <div class="about-col-1">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>A Bachelor of Technology in Computer Science & Engineering, highly motivated, enthusiastic
+                            and passionate about programming, seeking an opportunity to restart a career in the IT
+                            field.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>HTML / CSS / Angular</li>
+                                <li><span>Programming Languages</span><br>Java / JavaEE / Javascript</li>
+                                <li><span>J2EE Technologies</span><br> Spring / Springboot / JPA / Hibernate </li>
+                                <li><span>Version Control</span><br>Git / Github / CLI</li>
+                                <li><span>IDE & Other Tools</span><br>Eclipse / IntelliJ / Maven</li>
+                                <li><span>Operating Systems</span><br>MS-Windows / Mac / Linux</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>current</span><br>Self Employed Baker</li>
+                                <li><span>2014</span><br>Packager at Planzer AG</li>
+                                <li><span>2013</span><br>Provided Mathematics and Computer tutoring</li>
+                                <li><span>2011</span><br>Programmer Analyst (C#, Asp.net) at Cognizant Technology
+                                    Solutions</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022</span><br>Powercoders Intensive Bootcamp Program of Web Development,
+                                    Berne, Switzerland</li>
+                                <li><span>2020</span><br>Telc B1 German Certification, Berne, Switzerland</li>
+                                <li><span>2014</span><br>Oracle Certification in Java, Berne, Switzerland</li>
+                                <li><span>2012</span><br>Informatica and Cognos course at Core Mind Technologies, India
+                                </li>
+                                <li><span>2010</span><br>Bachelor of Technology in Computer Science & Engineering</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-col-2">
+                        <img class="myImage " src="./images/jo7.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  <!-----------------------------------Projects------------------------------------>
+
+  
+
+ <!-----------------------------------Contact------------------------------------>
+
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> jyothi.jogin@powercoders-org</p>
+                <p><i class="fas fa-phone-square-alt"></i>+41 764558587</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/jyothi.jogin"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jyothi-jogin-9211861a8/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/jyothijogin"><i class="fab fa-github"></i></a>
+                </div>
+                <a href="./cv/CV_JyothiJogin.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" id="msg" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+   
+ </div>
+    </main>
+    <footer class="copyright">
+        <p>Copyright © Jyothi</p>
+    </footer>
+    <script src="./myScript.js"></script>
+    </script>
 </body>
 
 </html>
